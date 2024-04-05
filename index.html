@@ -5,7 +5,7 @@
     <title>Contact Form 09</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -180,10 +180,10 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">+63</span>
                                                 </div>
-                                                <input type="tel" class="input form-control">
+                                                <input type="tel" class="input form-control" required>
                                             </div>
                                             <div class="input-group mb-3 col-md-12">
-                                                <input type="number" class="input form-control" placeholder="Amount">
+                                                <input type="number" class="input form-control" placeholder="Amount" required>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
@@ -249,12 +249,12 @@
             }
         });
     </script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const player = new Plyr('#videoPlayer');
+        });
+    </script>
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
 </body>
 
 </html>
